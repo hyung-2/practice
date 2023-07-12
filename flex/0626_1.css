@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0; padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; height: 100vh;
+  border: 3px solid #333;
+}
+.container header, .container .tab {
+  border: 3px solid #333;
+  height: 70px; margin: .1rem ;
+}
+
+.container main {
+  margin: .1rem ;
+  border: 3px solid #333;
+  flex: 1;
+  display: flex;
+}
+.container main aside, .container main section{
+  border: 3px   solid #333;
+  margin: .1rem ;
+}
+.container main aside {
+  width: 400px;
+  flex: none;
+}
+.container main section {
+  flex: 1 ;
+  overflow: auto;
+}

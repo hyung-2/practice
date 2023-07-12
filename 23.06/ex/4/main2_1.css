@@ -1,0 +1,120 @@
+html {
+  /* background-color: #34a07cb7; */
+  background:linear-gradient(180deg,#34a07cb7,#087a54b7)
+}
+
+body {
+  margin: 50px;
+  text-align: center;
+  max-width: 200%;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+figure {
+  margin: 0; padding: 0;
+  height: 40%;
+  width: 100% ;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: .5s ;
+  transform-origin: bottom;
+}
+.arti {
+  display: inline-flex;
+  flex-wrap: wrap;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  justify-content: center;
+
+ 
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  width: 20rem;
+  height: 550px;
+  object-fit: cover;
+  line-height: 27px;
+  text-align: left;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: .1s ;
+  transition-timing-function:ease-out ;
+
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  margin: 22px;
+  /* 수정한 부분 */
+  /* transition-property: all;*/
+  /* transition-duration: 1s ; */
+  /* top: 200px; */
+}
+h3 {
+  font-size: 28px;
+  margin-top: 9px;
+  margin-bottom: 31px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.more {
+  margin-top: 27px;
+  color: #28666e;
+  /* font-weight: 600; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+}
+
+a:hover .box{
+  background-color: rgba(0, 0, 0, 0.855);
+}
+/* 추가한 부분 */
+a:hover .hidetext{
+  top: 0;
+}
+
+a:hover figure {
+  z-index:-1;
+}
+a:hover .more{
+  visibility: hidden;
+}
+a:hover .text {
+  position: absolute;
+  opacity: 0; /* 수정한 부분 */
+  /* visibility: hidden; */
+  /* top: 600px; */ /* 수정한 부분 */
+}
+
+.hidetext {
+  margin: 22px;
+  color: white;
+
+  /* 수정한 부분 */
+  transition-duration: .5s ;
+  transition-timing-function: ease-out;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+ 
+
+a:hover .hidetext {
+  position: absolute;
+  top: 200px;
+}

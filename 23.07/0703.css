@@ -1,0 +1,131 @@
+/* .circle {  변경하고 싶은 스타일 정의 
+  all : unset ;
+  position : absolute;
+  left : 500px;
+  width : 200px;
+  height : 70px;
+  text-align : center;
+  background : skyblue;
+  border-radius : 50%;
+  transition : all ease 2.5s;
+} */
+
+/* body {
+  padding: 0; margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+/* .instant-msg {
+  width: 500px;
+  height: 100px;
+  background-color: peru;
+  columns: tan  ;
+  border-radius: 15px;
+
+  position: absolute;
+  top: 10px; right: 10px;
+  display: none;
+
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.show {
+  display: block;
+} */
+
+/* body {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+#clock {
+  width: 100%; height: 100vh;
+  background: url('https://t1.daumcdn.net/cfile/tistory/99E3B33E5B2852742A') no-repeat center;
+  background-size: cover;
+  color: white;
+  font-size: 5rem ;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* #circle {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background-color: peru;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: none; 이미자가 따라다닐때 커서 안보이게
+
+  background: url('https://pocketables.com/wp-content/uploads/2018/03/hero_chara_mario_update_pc1.png') no-repeat center;
+  background-size: cover;
+} */
+
+/* body {
+  margin: 0; padding: 0;
+  background-color: black;
+}
+
+.led-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+  border: 1px solid red;
+  width: 500px; height: 100px;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.led {
+  width: 30px; height: 30px;
+  background-color: orange;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.on {
+  box-shadow: 1px 1px 10px 10px orange;
+} */
+
+.sidebar {
+  width: 30%; height: 100vh;
+  position: absolute;
+  left: -30%; top: 0;
+  background-color: orange;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .7s ease-in-out;
+}
+.show {
+  left: 0%;
+}
+
+.menu {
+  width: 100%; 
+  flex: 1; /*높이 균등분배*/
+  background-color: peru;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgoldenrodyellow;
+  border-bottom: 1px solid lightgoldenrodyellow;
+}
+.menu:hover{
+  color: peru;
+  background-color: lightgoldenrodyellow;
+}

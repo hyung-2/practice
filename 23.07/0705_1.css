@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#file-input{
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%);
+}
+#img-box{
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+}
+#img-box img{
+  width: 100%;
+  height: 100%;
+}
+
+.progress-bar{
+  width: 500px;
+  height: 20px;
+  border: 2px solid orange;
+  border-radius: 12px;
+
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+}
+.progress-indicator{
+  width: 0%;
+  height: 20px;
+  background: orange;
+  border-radius: 8px;
+}
+.progress-number{
+  float: right;
+  font-size: 1.5rem;
+}

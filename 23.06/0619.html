@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블 태그</title>
+  <link rel="stylesheet" href="0619.css">
+</head>
+<body>
+  <h1>테이블 태그</h1>
+  <table>
+    <caption>
+      <h2>테이블 제목</h2>
+      <p>테이블 설명을 추가하면 된다.</p>
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">구분</th>
+        <th scope="col">제목 1</th>
+        <th scope="col">제목 2</th>
+        <th scope="col">제목 3</th>
+        <th scope="col">제목 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>데이터 11</td>
+        <td colspan="2">데이터 12</td>
+        <td>데이터 14</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>데이터 21</td>
+        <td rowspan="3">데이터 22</td>
+        <td>데이터 23</td>
+        <td>데이터 24</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>데이터 31</td>
+        <td class="im">데이터 33</td>
+        <td>데이터 44</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>데이터 41</td>
+        <td colspan="2">데이터 43</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td colspan="4">데이터 51</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">합계</th scope="row">
+        <td>총합 1</td>
+        <td>총합 2</td>
+        <td>총합 3</td>
+        <td>총합 4</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

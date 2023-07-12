@@ -1,0 +1,113 @@
+body {
+  margin: 0; padding: 0;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  /* flex는 컨테이너에 적용하는 속성
+     컨텐츠 크기만큼만 너비 측정
+     아무것도 설정하지않으면 부모 높이에 맞춰서 자식요소(아이템) 높이가 늘어남 */
+  /* flex-direction: column;  */
+  /* column :  교차축과 메인축이 바뀜 (세로가메인, 가로가 교차축 됨) */
+  flex-wrap: wrap;
+  /* wrap : 창크기가 달라져도 컨테이너 안으로 아이템들이 들어감 */
+  width: 50%; height: 100vh;
+  /* width가 고정(px)일땐 컨테이너값이 고정되므로 wrap이 안됨 */
+  align-items: flex-start;
+  /* align-items 세로방향(교차축) 정렬 **컨테이너높이에서만 정렬됨 
+          : stretch : 디폴트값*/
+  /* justify-content: flex-start; */
+  /* justify-content 수평방향(메인축) 정렬 
+          : space-between - 시작점, 끝점에 아이템 하나씩 두고 균등분배 헤더에 많이 쓰임
+          : space-around - 마진이 좌우측 동등하게됨 */
+}
+
+.item {
+  background-color: darkcyan;
+  margin-right: 10px;
+}
+/* .item:nth-child(1) {
+  flex-basis: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex : 1 1 200px }*/
+  /* 속기형 : flex-grow flex-shrink flex-basis  */
+/* flex-grow : 메인축 방향으로 컨테이너를 채울때까지 늘어남
+   가져가는 비율은 flex-grow에 설정된 비율만큼만 공간을 차지함 
+   - 값이 클수록 많이 늘어남
+   flex-basis : 메인축 방향으로 아이템의 "기본크기 설정"(컨텐츠에 상관없이)
+   flex-shrink : 메인축 방향으로 얼마만큼의 비율로 줄일지 결정
+   - 값이 클수록 더 많이 줄어듬 */
+
+.container2 {
+  display: flex;
+  /* inline-flex : inline-block과 비슷한 개념. container들끼리 수평정렬 */
+  /* flex-direction: column-reverse; */
+  /* row : 디폴트값 
+     row-reverse : 가로 반대로 정렬 (오른쪽부터)
+     column : 세로로 정렬
+     column-reverse : 아래부터 세로로 정렬*/
+  flex-wrap: wrap;
+  /* wrap-reverse : 줄어들면 맨끝item이 위로 올라옴 */
+  background-color: tomato;
+  align-content: space-around;
+  /* stretch : con높이만큼 늘어남 - item의 height을 항상 auto로 줘야함 */
+  /* margin: 10px; */
+  width: 1530px; 
+  height: 500px;
+}
+
+.item2 {
+  height: 200px;
+  width:  230px;
+  /* width값이 고정되면 컨텐츠길이가 길면 밖으로 삐져나옴 (flex무마)
+     컨텐츠 크기가 witdh보다 커지지는 않음,
+     basis랑 같이 적용시 basis보다 줄어들지는 않음
+                        flex가 적용되어있어 컨텐츠크기보다 width가 커지지않음 */
+  flex-basis: 200px;  
+  /* flex-basis보다 컨텐츠 크기가 크면 basis크기는 무시되고 컨텐츠 크기만큼 커짐
+                    컨텐츠 크기가 작으면 basis값으로 적용됨 */
+  /* margin: 10px; */
+  /* line-height: 200px; */
+  /* width같게 설정하여 세로중앙에 위치(복습) */
+  text-align: center;
+  /* 텍스트 가로중앙 */
+  font-size: 50px;
+  background-color: skyblue;
+  /* border: 3px solid yellow; */
+}
+
+.item2:nth-child(1) {
+  order: 5;
+}
+.item2:nth-child(3) {
+  order: -2;
+  /* order : 숫자가 작을수록 앞쪽에 배치 */
+}
+
+.container3 {
+  display: inline-flex;
+  background-color: tomato;
+  margin: 10px;
+  width: 1000px;
+  height: 500px;
+}
+
+.item3 {
+  flex-basis: 200px;
+  height: 200px;
+  border: 3px solid yellow;
+  font-size: 50px;
+  background: skyblue;
+}
+
+/* .item3:nth-child(1) {
+  flex-grow: 1;
+}
+.item3:nth-child(2) {
+  flex-grow: 2;
+}
+.item3:nth-child(3) {
+  flex-grow: 1;
+} */

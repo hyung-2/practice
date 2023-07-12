@@ -1,0 +1,46 @@
+/* *(모든요소) {
+  box-sizing: border-box;
+  전체적인 레이아웃은 틀어지지않고 border,padding이 안쪽으로 들어감 
+  (width,height이 변하지 않음)
+} */
+
+/* .box {
+  width: 500px; height: 200px;
+  background-color: orange;
+  border: 5px solid red;} */
+  /*   max-width: 350px;
+       이미지 원본 크기로 지정하면 이미지화질이 깨지지않음, 350px 이상 커지지않음
+       컨테이너 사이즈 맞출때 유용 */
+  
+  /* min-width: 500px; 
+     500px이하로는 너비가 줄어들지않고 스크롤이생김 element가 밖으로 벗어나지않음 */
+
+
+/* @media(max-width: 700px) {
+  .box {width: 100%;}
+  }
+  디바이스 크기가 700px이하로 줄어들면 적용되는 스타일 */
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  /* dislpay를 table-cell을 주고 vertical-aling:middle로 하면 세로 중앙에 배치 (한세트로 묶여야 적용됨) */
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 50%;
+  background-color: #eee;
+  font-size: 0;
+  margin: auto;
+  /* 가로중앙 배치 */
+  text-align: center;
+}
+
+.container .content {
+  width: 5rem; height: 5rem;
+  background-color: #ccc;
+  display: inline-block;
+  margin: .3rem;
+}

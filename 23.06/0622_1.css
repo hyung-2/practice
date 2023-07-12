@@ -1,0 +1,71 @@
+body {
+  margin: 0; padding: 0;
+}
+
+.container {
+  width: 100vw; height: 100vh;
+  background-color: rgb(81, 108, 119);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container nav {
+  width: 30%;
+  margin: 0 auto;
+  /* background-color: orange; */
+
+}
+
+.container nav ul {
+  list-style: none;
+  padding: 0; margin: 0;
+  text-align: center;
+  font-size: 0;
+  /* font-size:0 은 display: inline-block인 경우 디폴트 마진 제거(inlineblock사이사이) */
+}
+.container nav ul a li {
+  display: inline-block;
+  /* border: 1px solid red; */
+  font-size: 5rem;
+  /* font-size 설정 이유는 inlineblock이라 디폴트마진을 제거하기 위해 
+    부모에 font-size를 0으로줘서 글자가 사라졌기 때문에 글자를 다시 나타내기위해 */
+  width: 150px; height: 150px;
+  line-height: 150px;
+  /* line-height을 height과 동일하게 주면 span이 세로 중앙으로 내려옴 */
+  border-radius: 50%;
+  margin: 1rem ;
+  background-color: rgba(170, 255, 247, .3);
+  box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, .3);
+  /* box-shadow: X축그림자 Y축그림자 불투명도 색상 */
+  transition: .3s ;
+}
+
+.container nav ul a li {
+  text-decoration: none;
+  color: white;
+
+}
+
+.material-icons {
+  font-size: 5rem;
+}
+
+.container nav ul a li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.3);
+}
+.material-icons {
+  transition: .3s;
+}
+.container nav ul a li:hover .material-icons{
+  color: rgba(255, 241, 42, 0.5);
+}
+
+.container nav ul a li:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 0;
+}
+
+.container nav ul a li:active .material-icons {
+  color: rgb(255, 251, 0);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 페이지</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="5.css">
+</head>
+<body>
+  <div class="con">
+      <img src="http://tfgms.com/sandbox/dailyui/logo-1.png" alt="">
+    <h1>Register</h1>
+    <form action="/" method="post">
+        <div class="res">
+          <div class="first">
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" id="firstname" required>
+          </div>
+          <div class="last">
+            <label for="lastname">LAST NAME</label>
+            <input type="text" id="lastname" required>
+          </div>
+          <div class="email">
+            <label for="mail">EMAIL</label>
+            <input type="email" name="useremail" id="mail" required>
+          </div>
+          <div class="password">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="userpassword" id="password" required>
+          </div>
+        </div>
+      <div class="check">
+        <input type="checkbox" name="checknewsletter" id="check">
+        <label for="check">
+          <span class="box">&#9744;</span>
+          <span class='chk'>Sign me up for the weekly newsletter.</span>
+        </label>
+      </div>
+      <div class="sign">
+        <input type="submit" value="Sign Me Up">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

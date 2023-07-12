@@ -1,0 +1,125 @@
+:root { font-size: 27px; 
+  font-weight: 300;
+  padding-top: 7%;
+}
+
+
+.nom p strong {
+  color: black;
+  /* position: relative; */
+}
+
+.nom {
+  font-size: 2rem;
+  margin:auto;
+  width: 900px;
+}
+.nom p {
+  margin: 0.2rem; 
+  /* position: relative; */
+}
+
+sup {
+  font-size: 0.6rem;
+  vertical-align: top;
+}
+
+.nom p a {
+  color: #909090;
+  text-decoration-line: none;
+  position: relative;
+  
+
+}
+.nom p a:hover { 
+  color: black;
+ 
+}
+/* .nom p a::before {
+  position: absolute; bottom: 3px; z-index: -1;
+  content: '';
+  width: 10%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+} */
+.nom p a:nth-of-type(1):hover::before{
+  width: 51%;
+}
+.nom p a:nth-of-type(1)::before {
+  position: absolute;
+  bottom: 3px; z-index: -1;
+  content: '';
+  width: 0%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+  top: 58px; left: 640px;
+}
+
+.nom p a:nth-of-type(2):hover::before{
+  width: 39%;
+}
+.nom p a:nth-of-type(2)::before {
+  position: absolute;
+  bottom: 3px; z-index: -1;
+  content: '';
+  width: 0%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+}
+
+.nom p a:nth-of-type(3):hover::before{
+  width: 28%;
+}
+.nom p a:nth-of-type(3)::before {
+  position: absolute;
+  bottom: 3px; z-index: -1;
+  content: '';
+  width: 0%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+}
+
+.nom p a:nth-of-type(4):hover::before{
+  width: 239%;
+}
+.nom p a:nth-of-type(4)::before {
+  position: absolute;
+  bottom: 3px; z-index: -1;
+  content: '';
+  width: 0%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+  top: 58px; left: 180px; 
+}
+
+.nom p a:nth-of-type(5):hover::before{
+  width: 39%;
+}
+.nom p a:nth-of-type(5)::before {
+  position: absolute;
+  bottom: 3px; z-index: -1;
+  content: '';
+  width: 0%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+  top: 58px;
+}
+
+/* .nom p a strong::before {
+  position: absolute; bottom: 3px; z-index: -1;
+  content: '';
+  width: 10%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+}
+
+.nom p a strong:hover::before{
+  width: 100%;
+} */

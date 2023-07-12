@@ -1,0 +1,103 @@
+body {
+  margin: 0; padding: 0;
+  width: 100vw; height: 100vh;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  /* to top (방향설정), 시작하는색 %, 끝나는색 % (%는 섞는비율) */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.card {
+  max-width: 400px;
+  border-radius: 25px;
+  box-shadow: 0px 14px 80px rgba(35, 35, 58, .5);
+  margin: 0 auto;
+  position: relative;
+}
+
+.card .avatar {
+  width: 80px; height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  top: 15px; left: 70px;
+  border: 6px solid white;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+
+path {
+  fill: white;
+}
+
+.card .card-content {
+  /* border: 1px solid red; */
+  border-radius: 25px;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+}
+
+.card .card-content .card-img,
+.card .card-content .card-text {
+  display: inline-block;
+  /* border: 1px solid green; */
+  font-size: 3rem;
+  vertical-align: top;
+  display: table-cell;
+  /* inlineblock은 컨텐츠가 없으면 element가 보이지 않음
+     display: table-cell을 주면 컨텐츠가 없어도 일정공간 차지함 (px일때만) */
+}
+
+.card .card-content .card-img {
+  width: calc(400px * 2/5);
+  /* card의 max-width인 400px에서 가져옴 */
+  border-radius: 25px 0 0 25px;
+  background-image: url("https://m.media-amazon.com/images/S/aplus-media/vc/cab6b08a-dd8f-4534-b845-e33489e91240._CR75,0,300,300_PT0_SX300__.jpg");
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.card .card-content .card-text {
+  width: calc(400px * 2/3);
+  border-radius: 0 25px 25px 0;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #fff;
+  
+}
+
+.card .card-content .card-text .title {
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  padding: 1rem;
+}
+.card .card-content .card-text h2 {
+  margin: 0; padding: 0 1rem;
+  font-size: 1.5rem;
+}
+.card .card-content .card-text .desc {
+  font-size: 12px;
+  padding: .5rem  1rem;
+}
+
+.card .card-content .card-text .actions {
+  padding: .5rem 1rem;
+  font-size: 0;
+}
+
+.card .card-content .card-text .actions button {
+  width: calc(100% /3);
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  /* background-color: #fff; */
+  transition: .3s;
+}
+
+.card .card-content .card-text .actions button:hover {
+  color: #4caf50;
+  transform: rotate(22deg);
+}
+

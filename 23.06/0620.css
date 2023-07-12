@@ -1,0 +1,17 @@
+input[type="radio"][name="gender"]:checked + label {
+  background-color: yellow;
+}
+
+/* + (인접형제선택)은 바로 다음꺼로 선택됨 */
+
+input[type="checkbox"]:checked + label {
+  background-color: red;
+}
+
+#mandatory:target {
+  background-color: orange;
+}
+
+#optional:target {
+  background-color: brown;
+}

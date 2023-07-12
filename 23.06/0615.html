@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>목록태그, 서브메뉴 구조, 문서의 그룹화</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>목록 태그</h1>
+
+  <h2>unordered list</h2>
+    <ul>
+      <li>목록1</li>
+      <li>목록2</li>
+      <li>목록3</li>
+    </ul>
+  <h2>ordered list</h2>
+    <ol>
+      <li>목록1</li>
+      <li>목록2</li>
+      <li>목록3</li>
+      <li>목록4</li>
+    </ol>
+    
+    <h2>Definition list</h2>
+    <dl>
+      <dt>용어</dt>
+      <dd>용어설명 1</dd>
+      <dd>용어설명 2</dd>
+      <dd>용어설명 3</dd>
+    </dl>
+    
+    <h1>서브메뉴 구조</h1>
+    <ul>
+      <li>
+        About us
+          <ul>
+            <li>ceo greeting</li>
+            <li>history</li>
+            <li>
+              vision
+              <ul>
+                <li>
+                  <dl>
+                    <dt>꿈</dt>
+                    <dd>꿈에 대한 설명</dd>
+                  </dl>
+                </li>
+                <li>부지런함</li>
+                <li>
+                  성실함
+                  <ol>
+                    <li>지각ㄴ</li>
+                    <li>지각ㄴ</li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </li>
+      <li>works</li>
+      <li>Services</li>
+      <li>Location</li>
+    </ul>
+  <h2>문서의 그룹화</h2>
+    <div id="wrapper">
+      <div id="header">
+        <div>로고부분</div>
+        <div>네비게이션바</div>
+      </div>
+      <div id="content">
+        <div>사이드바</div>
+        <div>메인 컨텐츠</div>
+      </div>
+      <div id="footer">
+        <h1>푸터영역</h1>
+        <ul>회사 <span>블로그</span>으으</ul>
+        <ul>회사 카페</ul>
+        <ul>회사 커뮤니티</ul>
+        <ul>회사 자료</ul>
+        <ul>회사 ㅇㅇ</ul>
+      </div>
+    </div>
+  <h2>CSS 기초</h2>
+  <h1 style="color: green; font-size: 12px">CSS 문법</h1>
+
+  <h1 style="color: blue; font-size: 12px">CSS 문법</h1>
+  <!-- 위같은 인라인 방식은 잠깐 테스트할때만 사용함-->
+  
+  <h1>color</h1>
+  <h2>color name</h2>
+  <h3>RGB color</h3>
+  <h4>rgba color</h4>
+  <h5>hex color</h5>
+  <h6>hls color</h6>
+  
+
+</body>
+</html>

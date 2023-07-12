@@ -1,0 +1,62 @@
+.track {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+
+  position: fixed;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.track::before {/* 트랙에 맞물린 행성 스타일 -공통 */ 
+  content: '';
+  border-radius: 50%;
+  position: absolute; left: 0;
+  transform: translateX(-50%);
+}
+.track.earth { /* 궤도 스타일  */
+/*.class.class = 같은 element에서 서로다른 이름 선택 */
+ width: 400px; height: 400px;
+ animation: spin 7000ms linear infinite;
+}
+.track.earth::before { /* 궤도에 맞물린 행성 스타일 */ 
+  width: 30px; height: 30px;
+  background-color: green;
+}
+.track.venus{
+  width: 300px; height: 300px;
+  animation: spin 6000ms linear infinite;
+}
+.track.venus::before {
+  width: 50px; height: 50px;
+  background-color: yellow;
+}
+.track.mercury{
+  width: 200px; height: 200px;
+  animation: spin 5000ms linear infinite;
+}
+.track.mercury::before {
+  width: 20px; height: 20px ;
+  background-color: blue;
+}
+.sun {
+  width: 100px; height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  from {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}

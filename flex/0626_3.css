@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0; padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  border:  3px  solid #333;
+}
+
+.container footer {
+  flex: 1;
+  margin-top: auto;
+  height: 70px;
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem; text-align: center;
+}

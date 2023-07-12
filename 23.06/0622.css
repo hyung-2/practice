@@ -1,0 +1,133 @@
+body {
+  margin: 0; padding: 0;
+}
+
+/* .box {
+  width: 20%;
+  height: 200px;
+  background-color: brown;
+  margin-left: -20%;
+  transition: .3s;
+}
+
+.box nav ul {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+.box nav ul li {
+  height: calc(200px / 3);
+  calc (200px의 3등분)
+  border: 1px solid yellow;
+  font-size: 2rem;
+}
+button:focus +.box {
+  margin-left: 0 ;
+} */
+
+/* .box2 {
+  width: 100px; height: 100px;
+  background-color: brown;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 0; color: #fff;
+  text-align: center;
+}
+
+.box2:hover {
+  width: 100%; height: 100vh;
+  border-radius: 0;
+  margin: 0;
+  font-size: 10rem;
+} */
+
+/* .box3 {
+  display: inline-block;
+  width: 200px; height: 200px;
+  font-size: 5rem;
+  color: white;
+  margin-right: -70px;
+  transition: .3s;
+}
+.box3 img {
+  width: 100%;
+  height: 100%;
+}
+.box3:nth-child(1) {
+  background-color: aquamarine;
+}
+
+.box3:nth-child(2) {
+  background-color: darkseagreen;
+}
+
+.box3:nth-child(3) {
+  background-color: coral;
+}
+
+.box3:nth-child(4) {
+  background-color: skyblue;
+}
+
+.box3:nth-child(5) {
+  background-color: deeppink;
+}
+
+.box3:hover:nth-child(2) {
+  margin-left: 70px;
+}
+.box3:hover:nth-child(3) {
+  margin-left: 70px;
+}
+.box3:hover:nth-child(4) {
+  margin-left: 70px;
+}
+.box3:hover:nth-child(5) {
+  margin-left: 70px;
+} */
+
+.container {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: yellow;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s;
+  
+}
+
+.box4 {
+  /* background-color: coral;   */
+  font-size: 0; color: black;
+  text-align: center;
+  opacity: 0;
+  height: 50%  ;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  transition: .5s;
+}
+
+.container:hover .box4{
+  /* 요소의 너비가 정해지지 않은 경우 
+     동시에 좌우마진을 네거티브로 주면
+     너비가 확장이 된다 */
+  /* margin-left: -500px;
+  margin-right: -500px; */
+  font-size: 5rem;
+  opacity: 100;
+}
+
+.container:hover {
+  width: 80%;  height: 30%;
+  font-size: 5rem;
+  opacity: 100;
+  border-radius: 0;
+  background-color: coral;
+}

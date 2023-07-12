@@ -1,0 +1,36 @@
+.center {
+  width: 900px;
+  margin: auto;
+}
+
+.center p {
+  font-size: 54px;
+  font-weight: 300;
+  color: #909090;
+}
+
+.center p strong {
+  color: #000;
+  position: relative;
+}
+
+.center p strong::before {
+  position: absolute; bottom: 0;
+  content: '';
+  width: 0%;
+  height: 10px;
+  background-color: red;
+  transition: .3s;
+}
+
+.center p strong:hover::before {
+  width: 100%;
+}
+
+.center p sup {
+  font-size: 13px;
+  vertical-align:top;
+  position: relative;
+  top: 9px;
+  line-height: 100%;
+}

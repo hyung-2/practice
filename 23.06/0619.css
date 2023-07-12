@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1px solid brown;
+  border-collapse: collapse;
+  /* 2중으로 표가그려진걸 합쳐줌 */
+  background-color: bisque;
+}
+td {
+  text-align: center;
+}
+caption p {
+  border: 1px dashed blue;
+}
+
+.im {
+  color: blue;
+}
+th:hover, td:hover {
+  background-color: cornflowerblue ;
+}

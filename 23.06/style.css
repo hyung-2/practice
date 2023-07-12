@@ -1,0 +1,74 @@
+h1 {
+  color: blue;
+  font-size: 12px;
+}
+h2 {
+  color: brown;
+  font-size: 30px;
+}
+h3 {
+  color: rgb(241, 16, 121);
+}
+
+h4 {
+  color: rgba(77, 255, 23, 0.4);
+}
+h5 {
+  color: #abcdef;
+}
+h6 {
+  background-color: hsl(120, 50%, 50%);
+}
+
+/* hex, rgba가 자주쓰임 */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.parent {
+  width: 600px;
+  height: 100%;
+}
+.child {
+  height: 50vh;
+  width: 50%; 
+  /* 300px */
+  background: orange;
+}
+.child2 {
+  width: 50vw;
+  background: red;
+}
+/* % 단위는 부모 요소(class = parent)의 너비를 100%로 간주한 너비 */
+
+header {
+  width: 100%;
+  background-color: orange;
+}
+/* 뷰포트는 스크롤 영역을 포함하기때문에 %보다 크다 */
+:root {
+  font-size: 10px;
+}
+body {
+  font-size: 12px;
+}
+section p {
+  font-size: 1.5rem;
+  width: 30em;
+}
+/* section p 엘리먼트의 현재폰트의 1.5배 크기, 
+폰트설정을 안했으면 "브라우저 디폴트 크기(16px)" 로 설정됨 
+= 1.5 x 16px = 24px로 계산되어 나옴*/
+/* em은 전단계 크기에 영향을 받음
+ex) widht:30em같은 경우는 font-size 12px에서 section p font-size 1.5로 계산된 18px의 30em으로 적용 */
+section p strong {
+  font-size: 1.5em;
+}
+/* rem은 브라우저 디폴트 크기(root)의 영향을 받음 부모영향x 
+실무에서는 em보다 rem을 많이 사용함(반응형 웹 설계시)*/
+
+section p i {
+  font-size: 5vw;
+}
+/* vh,vw는 전체 뷰포트의 1/100이 1vh(vw) */

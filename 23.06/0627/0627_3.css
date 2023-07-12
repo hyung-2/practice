@@ -1,0 +1,38 @@
+.loading {
+  width: 200px;
+  height: 200px;
+  border: 15px dotted skyblue;
+  border-radius: 50%;
+  border-top: 15px dotted white;
+  border-right: 17px dotted skyblue;
+  border-bottom: 20px dotted skyblue;
+  border-left: 30px dotted   skyblue;
+  position: absolute;
+  /* loading의 부모요소 중에서 position이 static이 아닌  요소의 위치를 기준으로 loading의 위치가 결정됨 */
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  animation: spin  1500ms linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 3px;
+  margin: 0;
+  color: blue;
+}
+@keyframes spin {
+  0% {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}

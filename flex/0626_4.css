@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 70px;
+  border: 3px solid #333;
+}
+.container .text {
+  border: 3px solid #333;
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+button {
+  margin-left: auto;
+}
